@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wess Thrift - Vintage Vibes & Street Style</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #8B4513, #D2691E); color: white; padding: 20px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2em; }
+        nav { margin-top: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        nav a:hover { color: #FFD700; }
+        main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        h2 { text-align: center; color: #8B4513; font-size: 1.8em; margin-bottom: 20px; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .product-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .product-card:hover { transform: scale(1.05); transition: transform 0.2s; }
+        .product-image { width: 100%; height: 180px; background-size: cover; background-position: center; }
+        .product-image.img1 { background-image: url('https://source.unsplash.com/random/300x200/?tracksuit'); }
+        .product-image.img2 { background-image: url('https://source.unsplash.com/random/300x200/?jumpsuit'); }
+        .product-image.img3 { background-image: url('https://source.unsplash.com/random/300x200/?headgear,cap'); }
+        .product-image.img4 { background-image: url('https://source.unsplash.com/random/300x200/?jewelry,necklace'); }
+        .product-image.img5 { background-image: url('https://source.unsplash.com/random/300x200/?jordan,sneakers'); }
+        .product-image.img6 { background-image: url('https://source.unsplash.com/random/300x200/?tracksuit,vintage'); }
+        .product-info { padding: 10px; text-align: center; }
+        .product-info h3 { margin: 0 0 5px; color: #D2691E; }
+        .product-info .price { font-size: 1.1em; color: #8B4513; font-weight: bold; }
+        .add-to-cart { background: #D2691E; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+        .add-to-cart:hover { background: #B8860B; }
+        table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        caption { caption-side: top; padding: 10px; font-weight: bold; color: #8B4513; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: linear-gradient(135deg, #8B4513, #D2691E); color: white; }
+        tr:hover { background: #f9f9f9; }
+        .strikethrough { text-decoration: line-through; color: #999; }
+        .benefits { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .benefits h2 { text-align: center; color: #8B4513; font-size: 1.8em; margin-bottom: 15px; }
+        .benefits ul { list-style: none; padding: 0; }
+        .benefits li { margin-bottom: 8px; padding-left: 15px; position: relative; }
+        .benefits li:before { content: '★'; position: absolute; left: 0; color: #D2691E; }
+        footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 30px; }
+        @media (max-width: 768px) { .products-grid { grid-template-columns: 1fr 1fr; } nav a { display: block; margin: 5px 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wess Thrift</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#sales">Sales</a>
+            <a href="#about">About</a>
+            <a href="https://wa.me/254722388322" target="_blank">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products" class="showcase">
+            <h2>Our Thrift Treasures</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image img1"></div>
+                    <div class="product-info">
+                        <h3>Vintage Tracksuit</h3>
+                        <p class="price">KSh 3,900</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image img2"></div>
+                    <div class="product-info">
+                        <h3>Retro Jumpsuit</h3>
+                        <p class="price">KSh 5,200</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image img3"></div>
+                    <div class="product-info">
+                        <h3>Classic Cap</h3>
+                        <p class="price">KSh 1,950</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image img4"></div>
+                    <div class="product-info">
+                        <h3>Silver Necklace</h3>
+                        <p class="price">KSh 2,600</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image img5"></div>
+                    <div class="product-info">
+                        <h3>Jordan Kicks</h3>
+                        <p class="price">KSh 11,700</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image img6"></div>
+                    <div class="product-info">
+                        <h3>Cozy Tracksuit Set</h3>
+                        <p class="price">KSh 4,550</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sales" class="sales-section">
+            <h2>Upcoming Thrift Sales</h2>
+            <table>
+                <caption>Upcoming Thrift Sales Schedule and Discounts</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Category</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">End Date</th>
+                        <th scope="col">Pricing</th>
+                        <th scope="col">Perk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tracksuits</td>
+                        <td>October 10, 2025</td>
+                        <td>October 15, 2025</td>
+                        <td><span class="strikethrough">KSh 5,200</span> KSh 3,900</td>
+                        <td>Cozy comfort at steal prices.</td>
+                    </tr>
+                    <tr>
+                        <td>Jumpsuits</td>
+                        <td>October 12, 2025</td>
+                        <td>October 18, 2025</td>
+                        <td><span class="strikethrough">KSh 6,500</span> KSh 4,550</td>
+                        <td>One-piece wonders for easy style.</td>
+                    </tr>
+                    <tr>
+                        <td>Headgear</td>
+                        <td>October 15, 2025</td>
+                        <td>October 20, 2025</td>
+                        <td><span class="strikethrough">KSh 2,500</span> KSh 2,000</td>
+                        <td>Top off your look affordably.</td>
+                    </tr>
+                    <tr>
+                        <td>Jewelry</td>
+                        <td>October 18, 2025</td>
+                        <td>October 25, 2025</td>
+                        <td><span class="strikethrough">KSh 3,000</span> KSh 1,800</td>
+                        <td>Shine bright without breaking the bank.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Thrift with Wess?</h2>
+            <ul>
+                <li>Affordable finds from curated second-hand gems.</li>
+                <li>Unique pieces you won't see everywhere.</li>
+                <li>Easy returns within 14 days.</li>
+                <li>Fast local shipping for quick arrivals.</li>
+                <li>Sustainable shopping that supports eco-fashion.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wess Thrift. All rights reserved. | Vintage style, modern savings. (cis0041)</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Added to cart! Ready to checkout?');
+            });
+        });
+    </script>
+</body>
+</html>
